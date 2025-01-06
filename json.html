@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JSON in JS</h2>
+    <p id="para"></p>
+    <script>
+        var myobj={name:'Niharika', Age:18, Place:'India'};
+        var myJSON=JSON.stringify(myobj);
+        var newObj=JSON.parse(myJSON);
+        document.getElementById("para").innerHTML=newObj.Place;
+    </script>
+</body>
+</html>
