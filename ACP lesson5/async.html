@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC and AWAIT</title>
+</head>
+
+<body>
+    <h2>ASYNC and AWAIT</h2>
+    <p id="ans"></p>
+    <script>
+        async function add(a, b) {
+            let response = await a + b;
+            display(response);
+        }
+        function display(sum) {
+            document.getElementById("ans").innerHTML = sum;
+        }
+        add(50, 40)
+    </script>
+
+</body>
+
+</html>
